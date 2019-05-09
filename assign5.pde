@@ -615,7 +615,6 @@ int getEnemyIndexByRow(int row){				// Requirement #6
     for(int i=0; i<soldierY.length; i++){
       if(soldierY[i] == y ){
         idx = i;
-        println(idx);
       }
     }
     return idx;
