@@ -198,14 +198,13 @@ void initClocks(){
   clockY = new float[6];
   
   for(int i = 0; i < clockX.length; i++){
-    for(int j = 0; j < 1; j++){
+    clockX[i] = SOIL_SIZE * floor(random(SOIL_COL_COUNT));
+    clockY[i] = SOIL_SIZE * ( i * 4 + floor(random(4)));
       if(clockX[i] == cabbageX[i] && clockY[i] == cabbageY[i]){
-       j--;
-      }else{
       clockX[i] = SOIL_SIZE * floor(random(SOIL_COL_COUNT));
       clockY[i] = SOIL_SIZE * ( i * 4 + floor(random(4)));
       }
-    }
+    
   }
 }
 
